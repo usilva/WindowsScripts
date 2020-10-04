@@ -35,12 +35,13 @@ function MakeBareRepoBackup($repo, $backup){
         git remote -v;
                 
         Write-Output "creating post-commit.ps1 to use with hook"
-        Write-Output "#!$env:PROGRAMFILES/Git/usr/bin/sh.exe" > .git/hooks/post-commit.ps1;
+        #Write-Output "#!$env:PROGRAMFILES\Git/usr/bin/sh.exe" > .git/hooks/post-commit.ps1;
+        Write-Output "#!C:/Program\ Files/Git/usr/bin/sh.exe" > .git/hooks/post-commit.ps1;
         Write-Output " " >> .git/hooks/post-commit.ps1;
         Write-Output "git push backup" >> .git/hooks/post-commit.ps1;
 
         Write-Output "creating post-commit hook"
-        Write-Output "#!$env:PROGRAMFILES/Git/usr/bin/sh.exe" > .git/hooks/post-commit;
+        Write-Output "#!C:/Program\ Files/Git/usr/bin/sh.exe" > .git/hooks/post-commit;
         Write-Output "" >> .git/hooks/post-commit;
         Write-Output "exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\.git\hooks\post-commit.ps1'" >> .git/hooks/post-commit;
         Write-Output "exit" >> .git/hooks/post-commit;
