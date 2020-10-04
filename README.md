@@ -1,16 +1,42 @@
 # WindowsScripts
-My powershell scripts to install, configurate or simple automate tasks.
+My library of powershell scripts to install, configurate or simple automate tasks.
 
-This is my library of windows powershell scripts, every script has a describe yourself and usage options and walkthrougth.
+Every script has a text that describe his goal, usage options and walkthrougth.
 
-Here i discribe only general usage and options:
+Here i describe only general usage and options:
 
 ## Execution
 
+To run scripts at prompt you need to enable this, note this is dangerous
+so read and understand what every script do before run it.
+if you what disable script execution after run what you what(recomended)
+Use list command to check your current configuration, if you want to return to that:
+
+    PS> Get-ExecutionPolicy -List
+
 Enable execution of PowerShell scripts:
 
-    PS> Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+    PS> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Unblock PowerShell scripts and modules within this directory:
 
     PS> ls -Recurse *.ps*1 | Unblock-File
+
+see more about at: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7
+
+### Thanks To
+
+- [W4RH4WK](https://github.com/W4RH4WK)
+- Chris Titus(https://christitus.com/debloat-windows-10-2020/)
+
+## License
+
+    "THE BEER-WARE LICENSE" (Revision 42):
+
+    As long as you retain this notice you can do whatever you want with this
+    stuff. If we meet someday, and you think this stuff is worth it, you can
+    buy us a beer in return.
+
+    This project is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.
