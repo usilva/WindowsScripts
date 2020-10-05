@@ -26,14 +26,14 @@ see more about at: https://docs.microsoft.com/en-us/powershell/module/microsoft.
 
 ### Thanks To
 
-- [W4RH4WK](https://github.com/W4RH4WK)
 - Chris Titus(https://christitus.com/debloat-windows-10-2020/)
 - Patrick Fitzgerald (https://medium.com/@fitzgeraldpk/git-dont-push-to-backup-698459ae02f2)
+- phk@FreeBSD.ORG (https://spdx.org/licenses/Beerware.html)
 
 
 ## License
 
-    "THE BEER-WARE LICENSE":
+    "THE BEER-WARE LICENSE" (Revision 42):
 
     As long as you retain this notice you can do whatever you want with this
     stuff. If we meet someday, and you think this stuff is worth it, you can
