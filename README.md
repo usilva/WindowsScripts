@@ -28,10 +28,12 @@ see more about at: https://docs.microsoft.com/en-us/powershell/module/microsoft.
 
 - [W4RH4WK](https://github.com/W4RH4WK)
 - Chris Titus(https://christitus.com/debloat-windows-10-2020/)
+- Patrick Fitzgerald (https://medium.com/@fitzgeraldpk/git-dont-push-to-backup-698459ae02f2)
+
 
 ## License
 
-    "THE BEER-WARE LICENSE" (Revision 42):
+    "THE BEER-WARE LICENSE":
 
     As long as you retain this notice you can do whatever you want with this
     stuff. If we meet someday, and you think this stuff is worth it, you can
