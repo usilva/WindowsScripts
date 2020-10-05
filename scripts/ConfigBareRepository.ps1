@@ -26,9 +26,9 @@
 
 function MakeBareRepoBackup($repo, $backup){
         mkdir -p $backup;
-        cd $backup;
+        Set-Location $backup;
         git init --bare;
-        cd $repo;
+        Set-Location $repo;
 
         Write-Output "adding remote mirror link"
         git remote add --mirror=push backup $backup;
@@ -40,11 +40,13 @@ function MakeBareRepoBackup($repo, $backup){
         Write-Output " " >> .git/hooks/post-commit.ps1;
         Write-Output "git push backup" >> .git/hooks/post-commit.ps1;
 
+
         Write-Output "creating post-commit hook"
-        Write-Output "#!C:/Program\ Files/Git/usr/bin/sh.exe" > .git/hooks/post-commit;
-        Write-Output "" >> .git/hooks/post-commit;
-        Write-Output "exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\.git\hooks\post-commit.ps1'" >> .git/hooks/post-commit;
-        Write-Output "exit" >> .git/hooks/post-commit;
+        $file = $repo + '\.git\hooks\post-commit'
+        New-Item -Path $file -ItemType File -Value "#!C:/Program\ Files/Git/usr/bin/sh.exe"
+        Add-Content $file ""
+        Add-Content $file "exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\.git\hooks\post-commit.ps1'"
+        Add-Content $file "exit"
 }
 
 #check if use the command line parameters
