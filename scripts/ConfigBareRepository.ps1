@@ -9,7 +9,7 @@
 
 ## Instructions
 # Use a NAS, network drive, usb or network drive to store a remote repository(bare) backup.
-# [TIP] *Always name your bare repositories with .git suffix like described at git documentation. 
+# [TIP-IMPORTANTE] *Always name your bare repositories with .git suffix like described at git documentation. 
 # (https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server)
 
 ## [SINTAX] 

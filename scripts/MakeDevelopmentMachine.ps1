@@ -6,10 +6,10 @@
 ##
 ## Windows 10 1709 (16299) or later
 ## Enabled run powershell scripts: 
-##   Open powershell as administrator and run the commend bellow
+##   Open powershell as administrator and run the command bellow
 ##   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 ##
-## **If you preffer, after run you can disable this option again(recomended)
+## **If you preffer, after run the script you can disable this option again(recomended)
 
 ## To run type at powershell(ADM):
 ##  .\MakeDevelopmentMachine.ps1
