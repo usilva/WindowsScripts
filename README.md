@@ -26,8 +26,10 @@ see more about at: https://docs.microsoft.com/en-us/powershell/module/microsoft.
 
 ### Thanks To
 
-- [W4RH4WK](https://github.com/W4RH4WK)
 - Chris Titus(https://christitus.com/debloat-windows-10-2020/)
+- Patrick Fitzgerald (https://medium.com/@fitzgeraldpk/git-dont-push-to-backup-698459ae02f2)
+- phk@FreeBSD.ORG (https://spdx.org/licenses/Beerware.html)
+
 
 ## License
 
