@@ -37,7 +37,9 @@ $functions = @(
     "InstallToggl"
     "InstallmRemoteNG"    
     "InstallSlack"
-    "InstallInsomnia"
+    ##"InstallInsomnia"
+    "InstallPostman"
+    ##"InstallSOAPUI"
 
     ## Configurations
     "ConfigurateGit"
@@ -56,7 +58,7 @@ Write-Output "This is a script to install my .dotnet core development environmen
 
 function InstallWinget{
     Write-Output "installing winget"
-    Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v0.1.4331-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle -OutFile Winget.appx -UseBasicParsing
+    Invoke-WebRequest -Uri https://github.com/microsoft/winget-cli/releases/download/v-0.2.10191-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle -OutFile Winget.appx -UseBasicParsing
     Add-AppxPackage .\Winget.appx
 }
 
@@ -102,6 +104,13 @@ function InstallSlack{
 
 function InstallInsomnia{
     winget install -e Insomnia.Insomina
+}
+
+function InstallPostman{
+    winget install -e Postman.Postman
+}
+function InstallSOAPUI{
+    winget install -e SmartBear.SoapUIOpenSource
 }
 
 function InstallWSL{
